@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.pineapplepiranha.mobile.SimpleFragment_">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="-5"
+            android:id="@+id/less_five_pushup"
+            android:layout_toRightOf="@+id/pushups" />
+
+        <Button
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="-1"
+            android:id="@+id/less_one_pushup"
+            android:layout_toRightOf="@+id/less_five_pushup" />
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Push Ups"
+            android:gravity="center"
+            android:id="@+id/pushups" />
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:gravity="center"
+            android:id="@+id/pushupCount"/>
+
+        <Button
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:id="@+id/plus_one_pushup" />
+
+        <Button
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="+5"
+            android:id="@+id/plus_five_pushup" />
+
+    </LinearLayout>
+
+    <!-- Row Part 2 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="-5"
+            android:id="@+id/less_five_water" />
+
+        <Button
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="-1"
+            android:id="@+id/less_one_water" />
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Water"
+            android:gravity="center"
+            android:id="@+id/water" />
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:gravity="center"
+            android:id="@+id/waterCount"/>
+
+        <Button
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:id="@+id/plus_one_water" />
+
+        <Button
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="+5"
+            android:id="@+id/plus_five_water" />
+    </LinearLayout>
+</LinearLayout>
